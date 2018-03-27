@@ -1,6 +1,6 @@
 #git_hub repository建库命令：(在git bash 界面输入以下命令）
-'''git config --global user.name "Your Name"
-   git config --global user.email "email@example.com"
+'''git config --global user.name "pp107"
+   git config --global user.email name@163.com
    git initial #在当前路径建库（空库）
    git add <file> #将file文件添加到仓库
    git commit -m "注释"  #把文件提交到仓库
