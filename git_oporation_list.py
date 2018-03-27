@@ -17,6 +17,7 @@ $ git checkout <file>
 $ rm <file> #仅工作区删除（本地删除）
 $ git rm <file> #版本库删除（本地+工作区）
 $ git commit -m "注释“（更新版本库）
+$ git remote rm origin (删除本地git/config中注册的远程库）
 
 添加远程库
 $ git remote add origin git@github.com:pp107/my-repository.git  (与远程库建立链接）
