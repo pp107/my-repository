@@ -20,7 +20,7 @@ $ git commit -m "注释“（更新版本库）
 $ git remote rm origin (删除本地git/config中注册的远程库）
 
 添加远程库
-$ git remote add origin git@github.com:pp107/my-repository.git  (与远程库建立链接）
+$ git remote add origin https://github.com/pp107/my-repository.git  (与远程库建立链接）
 $ git push -u origin master (把本地推送至远程，第一次使用加”-u“建立关联）
 $ git push origin master (以后直接推送）
 
