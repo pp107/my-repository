@@ -24,9 +24,14 @@ $ git remote add origin https://github.com/pp107/my-repository.git  (与远程�
 $ git push -u origin master (把本地推送至远程，第一次使用加”-u“建立关联）
 $ git push origin master (以后直接推送）
 
+********************************************
 SSH keys认证
 $ ssh-keygen -t rsa -C "email"
 
 id_rsa.pub 内容复制到setting ->SSH and GPG keys中
+*********************************************
+
+SSH连接建立测试
+$ ssh -T git@github.com 
 
 '''
