@@ -24,14 +24,24 @@ $ git remote add origin https://github.com/pp107/my-repository.git  (与远程�
 $ git push -u origin master (把本地推送至远程，第一次使用加”-u“建立关联）
 $ git push origin master (以后直接推送）
 
-********************************************
+
 SSH keys认证
-$ ssh-keygen -t rsa -C "email"
+$ ssh-keygen -t rsa -C "email/username"  #依据邮箱或用户名生成SSH KEYGEN，保存路径可重选。
+$ clip < ~/.ssh/id_sra.pub  #剪切id_rsa.pub内容并复制到github.com->setting ->SSH and GPG keys中
+'''
+#在GNU-SHELL界面与远程库建立SSH通信前，需启动ssh-agent服务/进程，并将本地SSH私钥添加到SSH_AGENT
+'''
+$ eval $(ssh-agent -s)
+$ ssh-add~/.ssh/di_sra
 
-id_rsa.pub 内容复制到setting ->SSH and GPG keys中
-*********************************************
+'''  '''
+克隆远程库
+$ git clone https://github.com/pp107/my-repository.git （克隆master分支）
 
-SSH连接建立测试
-$ ssh -T git@github.com 
+分支操作
+$ git branch  （列出本地分支）
+$ git branch -r (列出远程分支）
+$ git branch -a (列出本地分支和远程分支）
+$ git clone -b masterTest <版本库的网址>  （克隆masterTest分支）
 
 '''
