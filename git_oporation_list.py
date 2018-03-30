@@ -32,7 +32,7 @@ $ clip < ~/.ssh/id_sra.pub  #剪切id_rsa.pub内容并复制到github.com->setti
 #在GNU-SHELL界面与远程库建立SSH通信前，需启动ssh-agent服务/进程，并将本地SSH私钥添加到SSH_AGENT
 '''
 $ eval $(ssh-agent -s)
-$ ssh-add~/.ssh/di_sra
+$ ssh-add~/.ssh/id_rsa
 
 '''  '''
 克隆远程库
