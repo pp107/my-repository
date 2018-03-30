@@ -24,3 +24,9 @@
    1直接运行（与sys.path在同一目录）
    2相当于import，当作模块来启动（与sys.path不在同一目录时使用）
 '''
+#windows当前目录下建虚拟环境命令
+'''
+python -m venv ll_env
+#激活虚拟环境命令
+ll_env\Script\activate
+'''
